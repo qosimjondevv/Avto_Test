@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100%;
+  background-color: #f3fdf8;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+.site_text {
+  text-align: center;
+  margin-top: 72px;
+  color: blue;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.minuts {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.category button {
+  width: 122px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.category button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+.category button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.easy_btn {
+  background-color: #defcee;
+  color: green;
+}
+.medium_btn {
+  background-color: #ffe1e1;
+  color: #894b00;
+}
+.high_btn {
+  background-color: #ffb3b3;
+  color: #9f0712;
+}
+.minuts a {
+  width: 122px;
+  height: 40px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.five_minut {
+  background-color: #defcee;
+  color: green;
+}
+.ten_minut {
+  background-color: #ffe1e1;
+  color: #894b00;
+}
+.fifteen_minut {
+  background-color: #ffb3b3;
+  color: #9f0712;
+}
+.minuts a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+.minuts a:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.start_btn {
+  width: 122px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  margin: 50px auto 0;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.start_btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+.start_btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}

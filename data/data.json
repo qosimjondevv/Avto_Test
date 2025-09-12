@@ -1,0 +1,343 @@
+[
+  {
+    "id": 1,
+    "question": "aylanma harakat?",
+    "answer": "../images/aylanma_harakat.gif"
+  },
+  {
+    "id": 2,
+    "question": "Asosiy yo'l?",
+    "answer": "../images/asosiy_yol.gif"
+  },
+  {
+    "id": 3,
+    "question": "Asosiy yo'lning yo'nalishi?",
+    "answer": "../images/asosiy_yolning_yonalishi.gif"
+  },
+  {
+    "id": 4,
+    "question": "Barcha cheklovlarni oxiri?",
+    "answer": "../images/barcha_cheklovlarni_oxiri.gif"
+  },
+  {
+    "id": 5,
+    "question": "Bir izli temir yol kesishmasi?",
+    "answer": "../images/bir_izli_temiryol.gif"
+  },
+  {
+    "id": 6,
+    "question": "Boshqa xaf xatar belgisi?",
+    "answer": "../images/boshqa_xaf_xatar.gif"
+  },
+  {
+    "id": 7,
+    "question": "Chapga burulish taqiqlanadi?",
+    "answer": "../images/chapga_burilish_taqiqlanadi.gif"
+  },
+  {
+    "id": 8,
+    "question": "Cheklangan balandlik?",
+    "answer": "../images/cheklangan_balandlik.gif"
+  },
+  {
+    "id": 9,
+    "question": "Cheklangan kenglik?",
+    "answer": "../images/cheklangan_kenglik.gif"
+  },
+  {
+    "id": 10,
+    "question": "Cheklangan uzunlik?",
+    "answer": "../images/cheklangan_uzunlik.gif"
+  },
+  {
+    "id": 11,
+    "question": "Dam olish joyi?",
+    "answer": "../images/dam_olish_joyi.gif"
+  },
+  {
+    "id": 12,
+    "question": "Diqqat bolalar?",
+    "answer": "../images/diqat_bolalar.gif"
+  },
+  {
+    "id": 13,
+    "question": "Eng kam oralig'?",
+    "answer": "../images/eng_kam_oraliq.gif"
+  },
+  {
+    "id": 14,
+    "question": "Falokat holatlar uchun kirish yo'li?",
+    "answer": "../images/falokat_holatlar_uchun_kirish_yoli.gif"
+  },
+  {
+    "id": 15,
+    "question": "Harkatlanish o'nga yoki chap?",
+    "answer": "../images/harakatlanish_onga_yoki_chapga.gif "
+  },
+  {
+    "id": 16,
+    "question": "Harakatlanish taqiqlanadi?",
+    "answer": "../images/harakatlanish_taqiqlanadi.gif"
+  },
+  {
+    "id": 17,
+    "question": "Harakatlanish to'g'riga?",
+    "answer": "../images/harakatlanish_togirga.gif"
+  },
+  {
+    "id": 18,
+    "question": "Ikki tomonlama harakatlanish?",
+    "answer": "../images/ikki_tomonlama_harakatlanish.gif"
+  },
+  {
+    "id": 19,
+    "question": "Ikkinchi darajali yo'l bilan kesishuv?",
+    "answer": "../images/ikkinchi_darajali_yolbilan_kesishuv.png"
+  },
+  {
+    "id": 20,
+    "question": "Kirish taqiqlanadi?",
+    "answer": "../images/kirish_taqiqlanadi.gif"
+  },
+  {
+    "id": 21,
+    "question": "Ko'p izli temir yo'l kesishmasi?",
+    "answer": "../images/kop_izli_temiryol.gif"
+  },
+  {
+    "id": 22,
+    "question": "Ko'zi ojizlar va piyodalar?",
+    "answer": "../images/kozi_ojizlar_va_piyodalar.gif"
+  },
+  {
+    "id": 23,
+    "question": "Mexmonxona?",
+    "answer": "../images/mexmonxona.gif"
+  },
+  {
+    "id": 24,
+    "question": "Mol haydab o'tish?",
+    "answer": "../images/mol_haydab_otish.gif"
+  },
+  {
+    "id": 25,
+    "question": "Nogironlar?",
+    "answer": "../images/nogironlar.gif"
+  },
+  {
+    "id": 26,
+    "question": "Notekis yo'l?",
+    "answer": "../images/notekis_yol.gif"
+  },
+  {
+    "id": 27,
+    "question": "Piyodalar o'tish joyi?",
+    "answer": "../images/piyodalar_otish_joyi.gif"
+  },
+  {
+    "id": 28,
+    "question": "Piyodalar yurushi taqiqlanadi?",
+    "answer": "../images/piyodalar_yurushi_taqiqlanadi.png"
+  },
+  {
+    "id": 29,
+    "question": "Qayrilish joyi?",
+    "answer": "../images/qayrilish_joyi.gif"
+  },
+  {
+    "id": 30,
+    "question": "Qayrilish oralig' masofasi?",
+    "answer": "../images/qayrilish_oraligi.gif"
+  },
+  {
+    "id": 31,
+    "question": "Qayrilish taqiqlanadi?",
+    "answer": "../images/qayrilish_taqiqlanadi.gif"
+  },
+  {
+    "id": 32,
+    "question": "Qizil rangda o'ngga burilish mumkin?",
+    "answer": "../images/qizil_rangda_ongga_burilish.png"
+  },
+  {
+    "id": 33,
+    "question": "Quvib o'tish taqiqlanadi?",
+    "answer": "../images/quvib_otish_taqiqlanadi.gif"
+  },
+  {
+    "id": 34,
+    "question": "Quvib o'tish taqiqlangan hududning oxiri?",
+    "answer": "../images/quvib_otish_taqiqlangan_hududning_oziri.gif"
+  },
+  {
+    "id": 35,
+    "question": "Ro'paradan harakatlanishning ustunligi?",
+    "answer": "../images/ropara_harakatlanishinig_ustunligi.gif"
+  },
+  {
+    "id": 36,
+    "question": "Ro'paradagi harakatlanishga nisbatan imtiyoz?",
+    "answer": "../images/roparadagi_harakatlanishga_nisbatan_imtiyoz.gif"
+  },
+  {
+    "id": 37,
+    "question": "Shifoxona?",
+    "answer": "../images/shifoxona.gif"
+  },
+  {
+    "id": 38,
+    "question": "Shlagbaumli temir yo'l kesishmasi?",
+    "answer": "../images/shlagbaumli_temiryol_keshimasi.gif"
+  },
+  {
+    "id": 39,
+    "question": "Shlagboumsiz temir yo'l kesishmasi?",
+    "answer": "../images/Shlagbaumsiz_temiryol_kesishmasi.gif"
+  },
+  {
+    "id": 40,
+    "question": "Sirpanchiq yo'l?",
+    "answer": "../images/sirpanchiq_yol.gif"
+  },
+  {
+    "id": 41,
+    "question": "Suniy yo'l notekisliklari?",
+    "answer": "../images/suniy_yol_notekisliklari.png"
+  },
+  {
+    "id": 42,
+    "question": "Surat va video?",
+    "answer": "../images/surat_va_video.png"
+  },
+  {
+    "id": 43,
+    "question": "Svetafor tartibga soladi?",
+    "answer": "../images/svetafor_tartibga_soladi.gif"
+  },
+  {
+    "id": 44,
+    "question": "Tamirlash ishlari?",
+    "answer": "../images/tamirlash_ishlari.gif"
+  },
+  {
+    "id": 45,
+    "question": "Tavsiya etilgan tezlik?",
+    "answer": "../images/tavsiya_etilgan_tezlik.gif"
+  },
+  {
+    "id": 46,
+    "question": "Temir yo'l kesishmasining yaqinligi haqida ogohlantirish?",
+    "answer": "../images/temir_yol_kesishmasining_yaqinligi_haqida_ogohlantirish.gif"
+  },
+  {
+    "id": 47,
+    "question": "Teng ahamyatli yollar kesishuvi?",
+    "answer": "../images/teng_ahamyatli_yollar_kesishuvi.gif"
+  },
+  {
+    "id": 48,
+    "question": "Texnik yordam korsatish joyi?",
+    "answer": "../images/texnik_yordam_korsatish_joyi.gif"
+  },
+  {
+    "id": 49,
+    "question": "Tibbiy yordam ko'rsatish joyi?",
+    "answer": "../images/tibbiy_yordam_korsatish_jyo.gif"
+  },
+  {
+    "id": 50,
+    "question": "Tirbandlik?",
+    "answer": "../images/tirbandlik.gif"
+  },
+  {
+    "id": 51,
+    "question": "Tonnel?",
+    "answer": "../images/tonnel.gif"
+  },
+  {
+    "id": 52,
+    "question": "Tosh otish xafi?",
+    "answer": "../images/tosh_otish_hafi.gif"
+  },
+  {
+    "id": 53,
+    "question": "Toshlar tushish xafi?",
+    "answer": "../images/toshlar_tushish_xafi.gif"
+  },
+  {
+    "id": 54,
+    "question": "Tovush moslamalaridan foydalanish taqiqlanadi?",
+    "answer": "../images/tovush_moslamalaridan_foydalanish_taqiqlanadi.gif"
+  },
+  {
+    "id": 55,
+    "question": "To'xtab turish joyi?",
+    "answer": "../images/toxtab_turish_joyi.gif"
+  },
+  {
+    "id": 56,
+    "question": "To'xtab turish taqiqlanadi?",
+    "answer": "../images/toxtab_turish_taqiqlangan.gif"
+  },
+  {
+    "id": 57,
+    "question": "To'xtash taqiqlanadi?",
+    "answer": "../images/toxtash_taqiqlangan.gif"
+  },
+  {
+    "id": 58,
+    "question": "To'xtamasdan harakatlanish taqiqlanadi?",
+    "answer": "../images/toxtatmasdan_harakatlanish_taqiqlanadi.gif"
+  },
+  {
+    "id": 59,
+    "question": "Turar joy dahasi?",
+    "answer": "../images/turar_joy_dahasi.gif"
+  },
+  {
+    "id": 60,
+    "question": "Vazn cheklangan?",
+    "answer": "../images/vazn_cheklangan.gif"
+  },
+  {
+    "id": 61,
+    "question": "Velosipedda yurush taqiqlanadi?",
+    "answer": "../images/velosipedda_yurush_taqiqlanadi.gif"
+  },
+  {
+    "id": 62,
+    "question": "Xafli burulish?",
+    "answer": "../images/xafli_burulish.png"
+  },
+  {
+    "id": 63,
+    "question": "Xafli burulishlar?",
+    "answer": "../images/xafli_burulishlar.png"
+  },
+  {
+    "id": 64,
+    "question": "Yo'l bering?",
+    "answer": "../images/yol_bering.gif"
+  },
+  {
+    "id": 65,
+    "question": "Yo'lni torayishi?",
+    "answer": "../images/yolni_torayishi.gif"
+  },
+  {
+    "id": 66,
+    "question": "Yuk avtomobillarida quvib o'tish taqiqlanadi?",
+    "answer": "../images/yuk_avtmobillarida_quvib_otish_taqiqlanadi.gif"
+  },
+
+  {
+    "id": 67,
+    "question": "Yuk avtomobillarining harakatlanishi taqiqlanadi?",
+    "answer": "../images/yuk_avtomobillarining_harakatlanishi_taqiqlanadi.png"
+  },
+  {
+    "id": 68,
+    "question": "Yuqori tezlik cheklangan?",
+    "answer": "../images/yuqori_tezlik_cheklangan.gif"
+  }
+]

@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   let timeSpan = document.querySelector(".time");
   const question = document.querySelector(".question");
-  const questionBox = document.querySelector(".question_box");
+  const questBox = document.querySelector(".question_box");
 
   const modal = document.querySelector(".modal");
   let restartBtn = document.querySelector(".restart_btn");
@@ -10,28 +10,33 @@ window.addEventListener("DOMContentLoaded", () => {
   let correctSpan = document.querySelector(".check .correct");
   let wrongSpan = document.querySelector(".check .wrong");
 
-  let selectedQuest = [];
+  let selectQuest = [];
   let countindex = 0;
   let correctCount = 0;
   let wrongCount = 0;
+  let totalAnswers = 0;
   let timer;
   let secunds;
-
+  let currentQuest = 0;
+  let remainingQuest = 0;
   function loadQuest() {
     fetch("../data/data.json")
       .then((res) => res.json())
       .then((data) => {
-        localStorage.setItem("allData", JSON.stringify(data));
+        localStorage.setItem("alData", JSON.stringify(data));
 
         const category = localStorage.getItem("selectedCategory");
         let count = category === "easy" ? 20 : category === "medium" ? 40 : 60;
 
         let shuffled = shuffleArray(data);
-        selectedQuest = shuffled.slice(0, count);
+        selectQuest = shuffled.slice(0, count);
 
         countindex = 0;
         correctCount = 0;
         wrongCount = 0;
+        totalAnswers = 0;
+        currentQuest = 0;
+        remainingQuest = count;
         correctSpan.textContent = "To'g'ri: 0";
         wrongSpan.textContent = "Nato'g'ri: 0";
 
@@ -46,66 +51,118 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function showQuest() {
     if (!question) return;
-    questionBox.innerHTML = "";
 
-    if (countindex >= selectedQuest.length) {
+    if (remainingQuest <= 0) {
       finishTest();
       return;
     }
 
-    const q = selectedQuest[countindex];
+    const q = selectQuest[countindex];
     question.textContent = `${countindex + 1}. ${q.question}`;
 
-    let allData = JSON.parse(localStorage.getItem("allData"));
-    let wrongOptions = allData
+    questBox.innerHTML = "";
+
+    let alData = JSON.parse(localStorage.getItem("alData"));
+    let wrongOptions = alData
       .filter((quest) => quest.id !== q.id)
       .map((item) => item.answer);
 
     wrongOptions = shuffleArray(wrongOptions);
 
-    const category = localStorage.getItem("selectedCategory");
-    let optionCount =
-      category === "easy" ? 19 : category === "medium" ? 39 : 59;
+    let optionCount = remainingQuest - 1;
 
     wrongOptions = wrongOptions.slice(0, optionCount);
 
-    let options = [...wrongOptions, q.answer];
+    let currentOptions = [...wrongOptions, q.answer];
+    currentOptions = shuffleArray(currentOptions);
 
-    options = shuffleArray(options);
+    currentQuest = 0;
 
-    options.forEach((opt) => {
+    currentOptions.forEach((opt, index) => {
       const wrapper = document.createElement("div");
       wrapper.classList.add("question_item");
+      wrapper.setAttribute("data-answer", opt);
+      wrapper.setAttribute("data-index", index);
 
       const qImg = document.createElement("img");
       qImg.src = opt;
       qImg.alt = q.question;
 
       qImg.addEventListener("click", () => {
-        if (opt === q.answer) {
+        document.querySelectorAll(".question_item img").forEach((img) => {
+          img.style.pointerEvents = "none";
+        });
+
+        const currentQuestion = selectQuest[countindex];
+        const correctAnswer = currentQuestion.answer;
+
+        if (opt === correctAnswer) {
           correctCount++;
+          totalAnswers++;
+          remainingQuest--;
           correctSpan.textContent = `To'g'ri: ${correctCount}`;
-          countindex++;
-          showQuest();
+          qImg.style.border = "3px solid green";
+          qImg.style.opacity = "1";
+
+          if (totalAnswers >= selectQuest.length) {
+            setTimeout(finishTest, 500);
+            return;
+          }
+
+          if (remainingQuest <= 0) {
+            setTimeout(() => {
+              finishTest();
+            }, 500);
+            return;
+          }
+
+          setTimeout(() => {
+            countindex++;
+            showQuest();
+          }, 500);
         } else {
+          if (qImg.dataset.clicked === "true") return; //
+          // qImg.dataset.clicked = "true"; //
+          currentQuest++;
           wrongCount++;
+          totalAnswers++;
+          remainingQuest--;
           wrongSpan.textContent = `Nato'g'ri: ${wrongCount}`;
-          qImg.style.opacity = "0.3";
-          qImg.style.pointerEvents = "none";
+          qImg.style.border = "3px solid red";
+          qImg.style.opacity = "0.7";
+
+          document.querySelectorAll(".question_item img").forEach((img) => {
+            if (img.src === correctAnswer) {
+              img.style.border = "3px solid green";
+              img.style.opacity = "1";
+            }
+          });
+
+          if (totalAnswers >= selectQuest.length) {
+            setTimeout(() => {
+              finishTest();
+            }, 500);
+            return;
+          }
+          if (remainingQuest <= 0) {
+            setTimeout(() => {
+              finishTest();
+            }, 500);
+            return;
+          }
 
           checkLimit();
-        }
-        if (correctCount + wrongCount >= selectedQuest.length) {
-          finishTest();
-          // return;
-        }
 
-        // countindex++;
-        // showQuest();
+          setTimeout(() => {
+            document.querySelectorAll(".question_item img").forEach((img) => {
+              img.style.pointerEvents = "auto";
+            });
+          }, 500);
+        }
       });
 
       wrapper.appendChild(qImg);
-      questionBox.appendChild(wrapper);
+      questBox.appendChild(wrapper);
     });
   }
 
@@ -114,8 +171,8 @@ window.addEventListener("DOMContentLoaded", () => {
     let limit = category === "easy" ? 5 : category === "medium" ? 8 : 12;
 
     if (wrongCount >= limit) {
-      alert("Siz o‘ta olmadingiz");
-      restartTest();
+      alert(`Siz ${limit} ta xato qildingiz. Test tugadi!`);
+      finishTest();
     }
   }
 
